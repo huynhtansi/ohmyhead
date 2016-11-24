@@ -29,8 +29,8 @@ public class VerticalScrollable {
     }
 
     public void update(float delta) {
-        position.add(velocity).cpy().scl(delta);
-        if (position.y > height/4-1) {
+        position.y += 1;
+        if (position.y > height/4) {
             isVerticalScrolling = true;
         }
     }
